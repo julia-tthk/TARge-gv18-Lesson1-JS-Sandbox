@@ -30,5 +30,27 @@ document.body.innerHTML = html;
 
 //Arrays
 const numbers1 = [1, 2, 3, 4, 5];
-console.log(numbers1);
 console.log(typeof(numbers1));
+//add an element to the end of the array
+numbers1.push(6);
+//add an element to the beginning of the array
+numbers1.unshift(0);
+
+//remove the last element of an array
+let removedElement = numbers1.pop();
+console.log('Removed element: ', removedElement);
+//remove the first element of an array
+numbers1.shift();
+//remove an element from a certain position using SPLICE()
+let splicedElement = numbers1.splice(2, 1);
+console.log(numbers1);
+console.log('Spliced element: ', splicedElement);
+//search for an element with a ceetain value
+let index = numbers1.indexOf(10);
+console.log(index);
+
+let mixedArray = [22, 'banana', true];
+//forEach loop
+mixedArray.forEach(element=>{
+    console.log(element, typeof(element));
+});
